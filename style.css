@@ -1,0 +1,111 @@
+@import url(./search.css);
+@import url(./reproductor.css);
+
+        /* 
+        Paleta de colores:
+        Principal: #eb9972
+        Secundario: #b7464e
+        Terciario: #2d2c49
+         */
+    /* Principal */
+   /*  background-color: #2d2c49; */
+    /* rgb(48, 47, 78) */
+    /* Secundario */
+    /* background-color: #EB9972; */
+    /* Terciadrio */
+    /* background-color: #b7464e; */
+    /* background-color: #b7464e; */
+
+body{
+    background-color: grey;
+    margin: 10px 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    border: 3px solid;
+    padding: 10px;
+    /* background-color: #2d2c49; */
+    background-image: linear-gradient(5deg, #555265 0, #b7464e 50%, #00022e 100%);
+    border-radius: 10px;
+}
+.navbar a{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(48, 47, 78);
+    border: 2px solid #b7464e;
+    border-radius: 50%; 
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    border: none;
+    transform: translateY(15px);
+}
+main{
+    padding-top: 60px;
+    margin-top: 5px;
+    border: 3px solid;
+    border-radius: 10px;
+    background-image: linear-gradient(5deg, #555265 0, #b7464e 50%, #2d2c49 100%);
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.container-fluid{
+    width: 60%;
+}
+.welcome{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 1.2em;
+    text-shadow: 2px 10px 15px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btnlogin{
+    width: 12em;
+    height: 3em;
+    background-color: rgb(48, 47, 78);
+    color: #EB9972;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: none;
+}
+.btnlogin:hover{
+    border: 3px solid #EB9972;
+}
+@media screen and (max-width: 767px){
+    /* Smartphones */
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
+    .welcome{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        /* border: 1px solid; */
+    }
+    .buttons{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+    }
+    .btnlogin{
+        margin-bottom: 1em;
+    }
+    .welcome{
+        font-size: 2.5em;
+    }
+}

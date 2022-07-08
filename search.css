@@ -1,0 +1,43 @@
+main{
+    border: 1px solid;
+    width: 100%;
+    
+    height: 500px;
+}
+.search{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(5deg, #555265 0, #2d2c49 50%, #00022e 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search p{
+    font-size: 20px;
+}
+.icon-search{
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.search span{
+    border-radius: 50%;
+}
+.form-control{
+    width: 13em;
+    background-color: transparent;
+    border: none;
+    font-size:x-large;
+    text-align: end;
+}
+.form-control::placeholder{
+    color: #b7464e;
+}
+.form-control:hover{
+    background-color: transparent;
+}
+.form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+    color: #EB9972;
+}
